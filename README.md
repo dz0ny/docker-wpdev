@@ -21,7 +21,7 @@ docker-wpdev and Wordpress itself. You can use Git to manage your Wordpress vers
 If this is the only thing running on your system you can map the port to 80 and no
 proxy is needed. i.e. `-p=80:80`.
 
-    sudo docker run -p=80:80 -v=(pwd)/web:/srv/wordpress dz0ny/wpdev
+    sudo docker run -p=80:80 -v=$(pwd)/web:/srv/wordpress dz0ny/wpdev
 
 From now on when you start/stop docker-wpdev you should use the container id
 with the following commands. To get your container id, after you initial run
