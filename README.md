@@ -4,6 +4,12 @@ A nice and easy way to get a Wordpress instance up and running using docker. For
 help on getting started with docker see the [official getting started guide][0].
 For more information on Wordpress and check out it's [website][1].
 
+It uses:
+    
+- PHP 5.5
+- Xdebug  [see guide][2] for tips how to use
+- Xcache
+- Nginx
 
 ## Building docker-wpdev
 
@@ -18,7 +24,7 @@ docker-wpdev and Wordpress itself. You can use Git to manage your Wordpress vers
 ## Notes on Wordpress
 
 Everything you do is in the ```web/content``` folder(plugins, themes). This way all your code is
-separated from actual Wordpress install and enables you to quickly switch Wordpress versions. 
+separated from actual Wordpress install and enables you to quickly switch Wordpress versions.
 
 ## Running docker-wpdev
 
@@ -46,4 +52,4 @@ name which is `dz0ny/wpdev:latest`.
 
 [0]: http://www.docker.io/gettingstarted/
 [1]: https://wordpress.org
-
+[2]: https://jtreminio.com/2012/07/xdebug-and-you-why-you-should-be-using-a-real-debugger/
