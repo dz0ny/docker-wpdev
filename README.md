@@ -1,8 +1,8 @@
 # docker-wpdev
 
-A nice and easy way to get a wpdev instance up and running using docker. For
+A nice and easy way to get a Wordpress instance up and running using docker. For
 help on getting started with docker see the [official getting started guide][0].
-For more information on wpdev and check out it's [website][1].
+For more information on Wordpress and check out it's [website][1].
 
 
 ## Building docker-wpdev
@@ -15,6 +15,10 @@ docker-wpdev and Wordpress itself. You can use Git to manage your Wordpress vers
     git submodule update --init --recursive
     sudo docker build -t dz0ny/wpdev .
 
+## Notes on Wordpress
+
+Everything you do is in the ```web/content``` folder(plugins, themes). This way all your code is
+separated from actual Wordpress install and enables you to quickly switch Wordpress versions. 
 
 ## Running docker-wpdev
 
@@ -31,6 +35,7 @@ name which is `dz0ny/wpdev:latest`.
     sudo docker start <container_id>
     sudo docker stop <container_id>
 
+
 ### Notes on the run command
 
  + `-v` is the volume you are mounting `-v=host_dir:docker_dir`
@@ -40,5 +45,5 @@ name which is `dz0ny/wpdev:latest`.
 
 
 [0]: http://www.docker.io/gettingstarted/
-[1]: https://github.com/dz0ny/docker-wpdev
+[1]: https://wordpress.org
 
